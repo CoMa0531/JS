@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      var nums = [3, 54, 6, 36];
+
+      // for(var i=0; i<nums.length; i++)
+      //   console.log(nums[i]);  // 지양 방법 
+
+      /*for(var i in nums)
+        console.log(nums[i]);
+
+      for(var n of nums)
+        console.log(n);      // 가능하면 이 방식을 써야됨. 
+      
+      var exam = {kor:10, eng:30, math:40};
+      for(var k in exam)
+        console.log(exam[k]); // exam["kor"] */
+
+      // function 함수 
+
+      var add = new Function("x, y", "return x+y;");
+      var aaa = add
+      var result = aaa(3,4,5,6);
+      console.log(result);
+      
+      var add = function() {
+        console.log(arguments.length);
+        return arguments[0] + arguments[1];
+      } 
+
+      console.log(add(3,4,5,6,7));
+
+      var message = 1; 
+      console.log([window.message]);
+
+    </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>
