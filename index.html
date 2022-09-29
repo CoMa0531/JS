@@ -4,8 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="operator.js" defer>
+
+    <script>
+      var code = "var x  = 40;";
+      eval(code);
+      console.log(x);
+
+       var nums = JSON.parse("[-4,-3,-2,-1,0,1,2,3,4]");
+
+       nums.push(5, 10);
+       console.log(nums);
+
+       var json = JSON.stringify(nums);
+       console.log(typeof json);
+
+       var exam = `{"kor":10,"eng":20}`;
+       exam = JSON.parse(exam);
+       console.log(exam.kor);
+       console.log(exam.eng);
+       exam.eng = exam.kor;
+       console.log(exam.eng);
+
+       var data = {
+        nums: nums,
+        exam: exam
+       };
+
+      json = JSON.stringify(data);
+      console.log(json);
+
+
     </script>
   </head>
-  <body></body>
+  <body>
+
+
+  </body>
 </html>
